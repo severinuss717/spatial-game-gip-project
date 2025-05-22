@@ -1,0 +1,12 @@
+# Exported from Render on 2025-05-22T06:32:29Z
+services:
+- type: web
+  name: Spatial-game-1
+  runtime: python
+  repo: https://github.com/severinuss717/Spatial-game
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: pybag main.py
+  autoDeployTrigger: commit
+version: "1"
